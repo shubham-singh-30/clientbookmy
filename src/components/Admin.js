@@ -3,6 +3,7 @@ import axios from "axios"
 let URL="http://localhost:6000"
 export const Admin = () => {
     const [cities,setCities]= useState([])
+    
     useEffect(() => {
         // Fetch the list of cities
         axios.get('/api/cities')
